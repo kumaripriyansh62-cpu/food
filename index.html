@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Recipe App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Foodie</h1>
+    <p>Discover delicious recipes!</p>
+  </header>
+
+  <section class="hero">
+    <h2>What do you want to cook today?</h2>
+    <input
+      type="text"
+      id="search"
+      placeholder="Search recipes..."
+      aria-label="Search recipes"
+    >
+  </section>
+
+  <nav class="categories">
+    <button class="active" data-category="All">All</button>
+    <button data-category="Breakfast">Breakfast</button>
+    <button data-category="Lunch">Lunch</button>
+    <button data-category="Dinner">Dinner</button>
+    <button data-category="Dessert">Dessert</button>
+  </nav>
+
+  <main>
+    <h2>Popular Recipes</h2>
+    <div id="recipe-list" class="recipe-grid"></div>
+  </main>
+
+  <div id="recipe-modal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="close-modal" class="close" aria-label="Close">✖</button>
+      <div id="recipe-details"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Foodie</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
